@@ -1,0 +1,21 @@
+<?php
+
+function comment_buddy_menu(){
+    $items = array();
+    $items['comment_update'] = array(
+        'title' => 'Comment update',
+        // 'page callback' => 'create_comment',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+    );
+    return $items;
+}
+
+// function create_comment() {
+// return '<p>Fare thee well my dear friend!</p>';
+// }
+
+function comment_buddy_comment_insert() {
+    drupal_set_message("Yupiiiiiii!");
+    // $_GET['destination'] = 'comment_update';
+}
